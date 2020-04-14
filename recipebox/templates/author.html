@@ -9,5 +9,14 @@
 <body>
     <h1>Author: {{author.name}}</h1>
     <p>Bio: {{author.bio}}</p>
+    <p>Recipe:
+        {% for recipe in recipes %}
+    <ul>
+        <li>
+             <a href="/recipes/{{recipe.id}}">{{recipe.title}}</a> 
+        </li>
+    </ul>
+    {% endfor %}
+    </p>
 </body>
 </html>
