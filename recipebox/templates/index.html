@@ -8,15 +8,18 @@
 </head>
 <body>
     <p>
-        <a href="/addrecipe">Add Recipe</a>
-        <a href="/addauthor">Add Author</a>
+        <a href="/addrecipe/">Add Recipe</a>
+        <a href="/addauthor/">Add Author</a>
     </p>
     {% for recipe in recipes %}
     <ul>
         <li>
-             <a href="/recipes/{{recipe.id}}">{{recipe.title}}</a> 
+             <a href="/recipes/{{recipe.id}}/">{{recipe.title}}</a> 
         </li>
     </ul>
     {% endfor %}
+    <button>
+        <a href="logout/">Logout</a>
+    </button>
 </body>
 </html>
